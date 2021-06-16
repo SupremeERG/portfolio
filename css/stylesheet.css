@@ -11,7 +11,7 @@ p {
     width: 48px;
     position: absolute;
     right: 50em;
-    top: 1.5em
+    top: 1.45em
 }
 
 
@@ -19,6 +19,7 @@ p {
 
 .header {
     display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 40px;
 }
 
@@ -28,7 +29,7 @@ p {
     padding: 5px;
     color: white;
     position: absolute;
-    right: 11em;
+    right: 15.15em;
     top: 1.5em 
 }
 
@@ -50,7 +51,17 @@ p {
     color: white;
     position: absolute;
     top: 1.5em;
-    right: 5.5em;
+    right: 9.6em;
+}
+
+.git {
+    display: inline;
+    border: 3px solid white;
+    padding: 5px;
+    color: white;
+    position: absolute;
+    top: 1.5em;
+    right: 5.4em;
 }
 
 .ph {
