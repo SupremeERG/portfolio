@@ -13,7 +13,7 @@ p {
 }
 
 .home {
-    display: inline;
+    display: block;
     border: 3px solid white;
     padding: 5px;
     color: white;
@@ -23,7 +23,7 @@ p {
 }
 
 .gallery {
-    display: inline;
+    display: block;
     border: 3px solid white;
     padding: 5px;
     color: white;
@@ -34,7 +34,7 @@ p {
 }
 
 .about {
-    display: inline;
+    display: block;
     border: 3px solid white;
     padding: 5px;
     color: white;
