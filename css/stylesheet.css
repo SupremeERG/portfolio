@@ -20,45 +20,13 @@ p {
     font-size: 40px;
 }
 
-.home {
+.nav {
     display: inline;
     border: 3px solid white;
     padding: 5px;
     color: white;
-    position: absolute;
-    right: 15.15em;
-    top: 1.5em 
-}
-
-.gallery {
-    display: inline;
-    border: 3px solid white;
-    padding: 5px;
-    color: white;
-    position: absolute;
-    right: 1em;
-    top: 1.5em
-    
-}
-
-.about {
-    display: inline;
-    border: 3px solid white;
-    padding: 5px;
-    color: white;
-    position: absolute;
-    top: 1.5em;
-    right: 9.6em;
-}
-
-.git {
-    display: inline;
-    border: 3px solid white;
-    padding: 5px;
-    color: white;
-    position: absolute;
-    top: 1.5em;
-    right: 5.4em;
+    position: relative;
+    left: 65em;
 }
 
 .ph {
