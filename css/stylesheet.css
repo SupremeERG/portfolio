@@ -2,6 +2,16 @@
     font-size: 40px;
 }
 
+.home {
+    display: block;
+    border: 3px solid black;
+    padding: 5px;
+    color: black;
+    position: absolute;
+    right: 11em;
+    top: 1.5em 
+}
+
 .gallery {
     display: block;
     border: 3px solid black;
@@ -26,7 +36,39 @@
 .ph {
     display: block;
     border-radius: 80px;
-    border-color: green;
-    border-style: groove;
+    border-color: #3c3535;
+    border-style: solid;
     border-width: 8px;
+}
+
+p.liked {
+    display: block;
+    color: green;
+    position: absolute;
+    left: 16.45em;
+    top: 17em
+}
+
+ul.liked {
+    display: block;
+    color: green;
+    position: absolute;
+    right: 70em;
+    top: 20em;
+}
+
+p.disliked {
+    display: block;
+    color: red;
+    position: absolute;
+    left: 25em;
+    top: 17em
+}
+
+ul.disliked {
+    display: block;
+    color: red;
+    position: absolute;
+    left: 23.45em;
+    top: 20em;
 }
