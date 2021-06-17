@@ -30,8 +30,8 @@ p {
     left: 44em;
 }
 .nav:hover {
-    color: black;
-    border-color: black;
+    color: #e27500;
+    border-color: #e27500;
     transition: all .5s;
 }
 
