@@ -1,5 +1,6 @@
 * {
     background-color: #2A2D32;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 p {
     color: white;
@@ -16,7 +17,7 @@ p {
 
 .header {
     display: inline;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     font-size: 40px;
 }
 
@@ -26,7 +27,12 @@ p {
     padding: 5px;
     color: white;
     position: relative;
-    left: 65em;
+    left: 44em;
+}
+.nav:hover {
+    color: black;
+    border-color: black;
+    transition: all .5s;
 }
 
 .ph {
