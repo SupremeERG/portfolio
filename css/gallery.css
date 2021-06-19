@@ -38,3 +38,7 @@
 .col-sm {
     margin-top: 2em;
 }
+.btn-primary {
+    border-width: 2px;
+    border-color: #e27500;
+}
