@@ -6,6 +6,28 @@
     margin-left: 10px;
     margin-top: 6px;
 }
-.modal {
+.modal-content {
     background-color: #2A2D32;
+    border-color: #e27500;
+    border-width: 3px;
+
+}
+.modal-title, .btn-secondary, .btn-primary, .modal-body {
+    color: white;
+}
+.modal-footer {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.btn-primary, .btn-secondary {
+    border: 3px solid white;
+    background-color: transparent;
+    text-decoration: underline;
+    border-radius: 0px;
+}
+.btn-secondary:hover, .btn-primary:hover {
+    border-color: #e27500;
+    color: #e27500;
+    background-color: transparent;
+    transition: all .5s;
 }
