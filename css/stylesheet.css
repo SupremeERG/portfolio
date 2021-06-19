@@ -7,6 +7,7 @@ p.bootstrap-overrides {
     margin-top: 1em;
     margin-bottom: 1em;
     margin-left: 11px;
+    text-decoration: none;
 }
 
 a.bootstrap-overrides {
