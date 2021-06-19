@@ -25,6 +25,9 @@
 .card-title, .card-text, .card-header, .card-footer {
     color: white;
 }
+.card-title {
+    font-weight: 800;
+}
 .card-footer {
     border-top: .5px solid white;
     margin-top: 10px;
