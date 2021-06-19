@@ -29,7 +29,19 @@
     <a class="nav" href="about.html">About Me</a>
     <a class="nav bootstrap-overrides">Gallery</a>
     <a class="nav" href="https://github.com/SupremeERG/" target="_blank">Github</a>
-    <a class="nav" href="mailto:zaddyisafake@gmail.com">Email</a>
+    <a class="nav">
+      <button type="button" class="btn" id="email" onclick="CopyEmail()" >Email</button>
+    </a>
+
+    <script>
+      function CopyEmail() {
+        var tempElem = $('<input>').val('zaddyisafake@gmail.com')
+        tempElem.appendTo('body').select();
+        document.execCommand('copy')
+        tempElem.remove()
+        alert('Copied!')
+      }
+    </script>
   </p>
   <hr class="bootstrap-overrides" />
 
@@ -48,12 +60,6 @@
       </button>
     </p>
   </div>
-  
-  <script>
-    var alertNode = document.querySelector('.alert')
-    var alert = bootstrap.Alert.getInstance(alertNode)
-    alert.close()
-  </script>
 
   <!-- Grid System -->
   <div class="container">

@@ -60,7 +60,20 @@
             <a class="nav" href="about.html">About Me</a>
             <a class="nav" href="gallery.html">Gallery</a>
             <a class="nav" href="https://github.com/SupremeERG/" target="_blank">Github</a>
-            <a class="nav" href="mailto:zaddyisafake@gmail.com">Email</a>
+            <a class="nav">
+                <button type="button" class="btn" id="email" onclick="CopyEmail()" >Email</button>
+              </a>
+          
+              <script>
+                function CopyEmail() {
+                  var tempElem = $('<input>').val('zaddyisafake@gmail.com')
+                  tempElem.appendTo('body').select();
+                  document.execCommand('copy')
+                  tempElem.remove()
+                  alert('Copied!')
+                }
+              </script>
+              
         </p>
         <hr class="bootstrap-overrides" />
 

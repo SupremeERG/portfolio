@@ -9,7 +9,18 @@ p.bootstrap-overrides {
     margin-left: 11px;
     text-decoration: none;
 }
-
+#email.btn {
+    color: white;
+    border: 3px solid transparent;
+    border-radius: 0;
+    padding: 3px;
+    background-color: transparent;
+    padding-bottom: 6px;
+    text-decoration: underline;
+}
+#email.btn:hover {
+    color: #e27500
+}
 a.bootstrap-overrides {
     text-decoration: none;
 }
