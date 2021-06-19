@@ -19,7 +19,7 @@
 }
 
 .card {
-    border: 1px solid #e27500;
+    border: 1.25px solid #e27500;
     background-color: #2A2D32;
 }
 .card-title, .card-text, .card-header, .card-footer {
@@ -32,11 +32,8 @@
     border-top: .5px solid white;
     margin-top: 10px;
 }
-.container {
-    margin-top: 3em;
-}
-.col-sm {
-    margin-top: 2em;
+.container, .col-sm {
+    margin-top: 2.5em;
 }
 .btn-primary {
     border-width: 2px;
