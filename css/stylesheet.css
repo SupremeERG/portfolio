@@ -23,7 +23,10 @@ hr.bootstrap-overrides {
     height: 48px;
     width: 48px;
     position: absolute;
+    /*
     right: 50em;
+    */
+    right: 50%;
     top: 1.45em
 }
 
