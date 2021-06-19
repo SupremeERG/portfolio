@@ -1,4 +1,4 @@
-.alert.bootstrap-overrides {
+.alert {
     border: 1px solid transparent;
     padding-top: 6px;
     padding-bottom: 0;
@@ -16,4 +16,24 @@
     border: 1px solid transparent;
     background-color: #d1e7dd;
     display: inline
+}
+
+.card {
+    display: block;
+    border: 3.5px solid #e27500;
+    background-color: #2A2D32;
+    padding-right: 0px;
+}
+.card-title, .card-text, .card-header, .card-footer {
+    color: white;
+}
+.card-footer {
+    border-top: .5px solid white;
+    margin-top: 10px;
+}
+.container {
+    margin-top: 3em;
+}
+.col-sm {
+    margin-top: 2em;
 }
