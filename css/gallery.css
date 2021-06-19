@@ -19,10 +19,8 @@
 }
 
 .card {
-    display: block;
-    border: 3.5px solid #e27500;
+    border: 1px solid #e27500;
     background-color: #2A2D32;
-    padding-right: 0px;
 }
 .card-title, .card-text, .card-header, .card-footer {
     color: white;
