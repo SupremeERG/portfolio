@@ -1,7 +1,9 @@
 .portfolio-img {
     background-color: white;
 }
-
+*.modal {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
 .modal-title {
     margin-left: 10px;
     margin-top: 6px;
@@ -19,7 +21,7 @@
     margin-right: 10px;
     margin-left: 10px;
 }
-.btn-primary, .btn-secondary {
+.modal-btn.btn-primary, .modal-btn.btn-secondary {
     border: 3px solid white;
     background-color: transparent;
     text-decoration: underline;
