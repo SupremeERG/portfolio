@@ -1,12 +1,23 @@
-* {
+body.bootstrap-overrides{
     background-color: #2A2D32;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
 }
-p {
+p.bootstrap-overrides {
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 11px;
+}
+
+a.bootstrap-overrides {
+    text-decoration: none;
+}
+
+hr.bootstrap-overrides {
     color: white;
 }
 
-.rice-logo {
+.bootstrap-overrides.rice-logo {
     display: inline-block;
     height: 48px;
     width: 48px;
@@ -15,9 +26,11 @@ p {
     top: 1.45em
 }
 
-.header {
+.bootstrap-overrides.header {
     display: inline;
     font-size: 40px;
+    padding-left: 5px;
+    padding-top: 1.45em
 }
 
 .nav {
@@ -42,57 +55,3 @@ p {
     border-style: solid;
     border-width: 8px;
 }
-
-/*
-.darkmode {
-    display: inline-block;
-    position: relative;
-    left: 20em;
-    top: .60em;
-}
-    .toggle {
-        position : relative ;
-        display : inline-block;
-        width : 50px;
-        height : 26px;
-        background-color: gray;
-        border-radius: 30px;
-        border: 2px solid gray;
-    }
-            
-    .toggle:after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        border-radius: 50%;
-        background-color: white;
-        top: 1px; 
-        left: 1px;
-        transition:  all 0.5s;
-        * {
-            bac
-        }
-    }
-            
-
-    p.toggle_text {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        position: relative;
-        left: 50em;
-    }
-            
-    .checkbox:checked + .toggle::after {
-        left : 24.5px; 
-    }
-            
-    .checkbox:checked + .toggle {
-        background-color: #2196F3;
-    }
-            
-    .checkbox { 
-        display : none;
-    }
-
-*/
