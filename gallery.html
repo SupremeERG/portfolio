@@ -30,16 +30,17 @@
     <a class="nav bootstrap-overrides">Gallery</a>
     <a class="nav" href="https://github.com/SupremeERG/" target="_blank">Github</a>
     <a class="nav">
-      <button type="button" class="btn" id="email" onclick="CopyEmail()" >Email</button>
+      <button type="button" class="btn" id="email" onclick="CopyEmail()">Email</button>
     </a>
 
     <script>
       function CopyEmail() {
         var tempElem = $('<input>').val('zaddyisafake@gmail.com')
         tempElem.appendTo('body').select();
-        document.execCommand('copy')
-        tempElem.remove()
-        alert('Copied!')
+        document.execCommand('copy');
+        tempElem.remove();
+        document.getElementById('email').innerHTML = "Copied";
+        setTimeout(() => { document.getElementById('email').innerHTML = "Email"; }, 2000)
       }
     </script>
   </p>

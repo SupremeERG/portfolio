@@ -38,9 +38,10 @@
             function CopyEmail() {
                 var tempElem = $('<input>').val('zaddyisafake@gmail.com')
                 tempElem.appendTo('body').select();
-                document.execCommand('copy')
-                tempElem.remove()
-                alert('Copied!')
+                document.execCommand('copy');
+                tempElem.remove();
+                document.getElementById('email').innerHTML = "Copied";
+                setTimeout(() => { document.getElementById('email').innerHTML = "Email"; }, 2000)
             }
         </script>
 

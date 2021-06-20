@@ -2,103 +2,109 @@
 
 <html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8" />
-        <title>Rice Portfolio</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
-        <link rel="stylesheet" type="text/css" href="css/specific.css" />
-        <link rel="icon" href="images/icon.svg" />
+<head>
+    <meta charset="UTF-8" />
+    <title>Rice Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/specific.css" />
+    <link rel="icon" href="images/icon.svg" />
 
-        <script>
-            $(document).ready(function () {
-                if (document.cookie == "") {
-                    $("#github_modal").modal("show");
-                    document.cookie = 'showed=true;expires' + new Date(99999 - 0 - 1).toUTCString() + ';path=/'
-                }
-            });
-        </script>
-    </head>
+    <script>
+        $(document).ready(function () {
+            if (document.cookie == "") {
+                $("#github_modal").modal("show");
+                document.cookie = 'showed=true;expires' + new Date(99999 - 0 - 1).toUTCString() + ';path=/'
+            }
+        });
+    </script>
+</head>
 
-    <body class="bootstrap-overrides">
-        <!-- Modal -->
-        <div class="modal fade" id="github_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="github_modalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <h5 class="modal-title" id="staticBackdropLabel">Support Me!</h5>
-                    <div class="modal-body">
-                        Would you like to follow my Github account?<br>I will only ask this once.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary modal-btn" data-bs-dismiss="modal">
-                            No
-                        </button>
-                        <button type="button" onclick="Follow()" data-bs-dismiss="modal" class="btn btn-primary modal-btn">
-                            Yes
-                        </button>
+<body class="bootstrap-overrides">
+    <!-- Modal -->
+    <div class="modal fade" id="github_modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="github_modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h5 class="modal-title" id="staticBackdropLabel">Support Me!</h5>
+                <div class="modal-body">
+                    Would you like to follow my Github account?<br>I will only ask this once.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal-btn" data-bs-dismiss="modal">
+                        No
+                    </button>
+                    <button type="button" onclick="Follow()" data-bs-dismiss="modal" class="btn btn-primary modal-btn">
+                        Yes
+                    </button>
 
-                        <script>
-                            function Follow() {
-                                window.open("https://github.com/supremeerg", "_blank");
-                            }
-                        </script>
-                    </div>
+                    <script>
+                        function Follow() {
+                            window.open("https://github.com/supremeerg", "_blank");
+                        }
+                    </script>
                 </div>
             </div>
         </div>
+    </div>
 
+    <p class="bootstrap-overrides">
+        <span class="bootstrap-overrides header">Student Bio: Ethan Gartica</span>
+        <a href="https://www.rice.edu" target="_blank">
+            <img class="bootstrap-overrides rice-logo" src="images/rice-logo.png" alt="www.rice.com" />
+        </a>
+
+        <a class="nav bootstrap-overrides">Home</a>
+        <a class="nav" href="about.html">About Me</a>
+        <a class="nav" href="gallery.html">Gallery</a>
+        <a class="nav" href="https://github.com/SupremeERG/" target="_blank">Github</a>
+        <a class="nav">
+            <button type="button" class="btn" id="email" onclick="CopyEmail()">Email</button>
+        </a>
+
+        <script>
+            function CopyEmail() {
+                var tempElem = $('<input>').val('zaddyisafake@gmail.com')
+                tempElem.appendTo('body').select();
+                document.execCommand('copy');
+                tempElem.remove();
+                document.getElementById('email').innerHTML = "Copied";
+                setTimeout(() => { document.getElementById('email').innerHTML = "Email"; }, 2000)
+            }
+        </script>
+
+    </p>
+    <hr class="bootstrap-overrides" />
+
+    <div>
         <p class="bootstrap-overrides">
-            <span class="bootstrap-overrides header">Student Bio: Ethan Gartica</span>
-            <a href="https://www.rice.edu" target="_blank">
-                <img class="bootstrap-overrides rice-logo" src="images/rice-logo.png" alt="www.rice.com" />
-            </a>
-
-            <a class="nav bootstrap-overrides">Home</a>
-            <a class="nav" href="about.html">About Me</a>
-            <a class="nav" href="gallery.html">Gallery</a>
-            <a class="nav" href="https://github.com/SupremeERG/" target="_blank">Github</a>
-            <a class="nav">
-                <button type="button" class="btn" id="email" onclick="CopyEmail()" >Email</button>
-              </a>
-          
-              <script>
-                function CopyEmail() {
-                  var tempElem = $('<input>').val('zaddyisafake@gmail.com')
-                  tempElem.appendTo('body').select();
-                  document.execCommand('copy')
-                  tempElem.remove()
-                  alert('Copied!')
-                }
-              </script>
-              
+            Ut vitae sollicitudin ex. Aliquam vel efficitur risus. Nam porttitor non
+            turpis et varius. Ut sit amet augue ultrices, egestas enim ut, venenatis
+            massa. Nullam aliquet ultrices lacus vel placerat. Duis semper tincidunt
+            risus, quis ultrices urna vehicula eget. Morbi in interdum orci. Sed vel
+            condimentum turpis, non faucibus massa. Proin molestie ullamcorper
+            venenatis. Fusce aliquam accumsan purus, sed finibus lectus pellentesque
+            sed. Duis nunc augue, rhoncus in ultrices at, lacinia nec justo. Aliquam
+            erat volutpat. Aliquam neque est, consectetur ac ante vel, pharetra
+            mattis tortor. Pellentesque a nisi et lacus dapibus semper nec et dolor.
+            Phasellus auctor gravida eros id scelerisque. Sed lobortis, velit a
+            ullamcorper pulvinar, mi ligula sollicitudin risus, non pellentesque
+            nunc mauris malesuada nunc. Suspendisse felis tortor, suscipit eu
+            eleifend et, blandit nec mi. Praesent enim velit, fringilla a pretium
+            eget, efficitur laoreet quam. Vestibulum pulvinar, felis et lacinia
+            posuere, felis nunc tristique ex, pret ium viverra sem augue ut erat.
+            Nunc elementum, augue non dignissim facilisis, mi nisl congue nunc,
+            pharetra bibendum quam quam non nulla. Vivamus tempor lectus massa,
+            euismod.
         </p>
-        <hr class="bootstrap-overrides" />
-
-        <div>
-            <p class="bootstrap-overrides">
-                Ut vitae sollicitudin ex. Aliquam vel efficitur risus. Nam porttitor non
-                turpis et varius. Ut sit amet augue ultrices, egestas enim ut, venenatis
-                massa. Nullam aliquet ultrices lacus vel placerat. Duis semper tincidunt
-                risus, quis ultrices urna vehicula eget. Morbi in interdum orci. Sed vel
-                condimentum turpis, non faucibus massa. Proin molestie ullamcorper
-                venenatis. Fusce aliquam accumsan purus, sed finibus lectus pellentesque
-                sed. Duis nunc augue, rhoncus in ultrices at, lacinia nec justo. Aliquam
-                erat volutpat. Aliquam neque est, consectetur ac ante vel, pharetra
-                mattis tortor. Pellentesque a nisi et lacus dapibus semper nec et dolor.
-                Phasellus auctor gravida eros id scelerisque. Sed lobortis, velit a
-                ullamcorper pulvinar, mi ligula sollicitudin risus, non pellentesque
-                nunc mauris malesuada nunc. Suspendisse felis tortor, suscipit eu
-                eleifend et, blandit nec mi. Praesent enim velit, fringilla a pretium
-                eget, efficitur laoreet quam. Vestibulum pulvinar, felis et lacinia
-                posuere, felis nunc tristique ex, pret ium viverra sem augue ut erat.
-                Nunc elementum, augue non dignissim facilisis, mi nisl congue nunc,
-                pharetra bibendum quam quam non nulla. Vivamus tempor lectus massa,
-                euismod.
-            </p>
-        </div>
-    </body>
+    </div>
+</body>
 
 </html>
