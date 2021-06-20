@@ -35,22 +35,21 @@
                 >Email</button>
             </a>
             <script>
-                function CopyEmail() {
-                    var tempElem = $('<input>').val('zaddyisafake@gmail.com')
-                    tempElem.appendTo('body').select();
-                    document.execCommand('copy');
-                    tempElem.remove();
-                    document.getElementById('email').innerHTML = "Copied";
-                    setTimeout(() => {
-                        document.getElementById('email').innerHTML = "Email";
-                    }, 2000)
-                }
+            function CopyEmail() {
+                var tempElem = $('<input>').val('zaddyisafake@gmail.com')
+                tempElem.appendTo('body').select();
+                document.execCommand('copy');
+                tempElem.remove();
+                document.getElementById('email').innerHTML = "Copied";
+                setTimeout(() => {
+                    document.getElementById('email').innerHTML = "Email";
+                }, 2000)
+            }
             </script>
         </p>
         <hr class="bootstrap-overrides">
-        <div class="alert alert-success alert-dismissable fade show" role="alert">
+        <div class="alert alert-success destroy-alert shake" id="src-code" role="alert">
             <p>
-                &nbsp;
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
@@ -64,16 +63,13 @@
                 All projects are
                 <a href="https://en.wikipedia.org/wiki/Open_source" target="_blank">open-source</a>
                 &ensp;
-                <button
-                    type="button"
-                    class="close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                >
-                    <span aria-hidden="true">×</span>
-                </button>
             </p>
         </div>
+        <script>
+        setTimeout(() => {
+            $('#src-code').alert('close')
+        }, 6000);
+        </script>
         <!-- Grid System -->
         <div class="container">
             <div class="row row-cols-3">
