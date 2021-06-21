@@ -50,7 +50,7 @@
     animation-fill-mode: forwards;
 }
 .col {
-    margin-top: 2em;
+    margin-top: .75em;
 }
 
 @keyframes reset {
