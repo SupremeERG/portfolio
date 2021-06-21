@@ -35,3 +35,10 @@
     background-color: transparent;
     transition: all .5s;
 }
+.unfinished {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+
+}
