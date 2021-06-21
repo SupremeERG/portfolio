@@ -49,3 +49,14 @@
     border-width: 2px;
     border-color: #e27500;
 }
+.tags {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    margin-top: 3px;
+    margin-right: 4px;
+
+}
+.tag {
+    margin-right: 3px;
+}
