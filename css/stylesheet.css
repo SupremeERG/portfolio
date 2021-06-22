@@ -59,12 +59,15 @@ hr.bootstrap-overrides {
     color   : white;
     position: relative;
     left    : 38.5em;
+    transition: all .2s;
     /*top   : -4.5em;*/
 }
 
 .nav:hover {
     color              : #e27500;
     border-color       : #e27500;
+    padding: 8px;
+    transition: all .5s;
 }
 
 
