@@ -1,4 +1,22 @@
 @charset "UTF-8";
+/*
+// Required
+@import "../bootstrap/scss/functions";
+
+// Default variable overrides
+$primary: #e27500;
+$success: #0d6efd;
+
+// Required
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+*/
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors

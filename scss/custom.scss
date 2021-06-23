@@ -1,6 +1,24 @@
+/*
+// Required
+@import "../bootstrap/scss/functions";
+
+// Default variable overrides
+$primary: #e27500;
+$success: #0d6efd;
+
+// Required
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+// Optional Bootstrap components here
+
+@import "../bootstrap/scss/root";
+@import "../bootstrap/scss/reboot";
+@import "../bootstrap/scss/type";
+*/
 
 $primary: #e27500;
 $success: #0d6efd;
 
+@import "../bootstrap/scss/bootstrap"
 
-@import "../bootstrap/scss/bootstrap";
