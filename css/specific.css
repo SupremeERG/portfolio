@@ -23,9 +23,7 @@
     border-width: 3px;
 
 }
-.modal-title, .btn-secondary, .btn-primary, .modal-body {
-    color: white;
-}
+
 .modal-footer {
     margin-right: 10px;
     margin-left: 10px;

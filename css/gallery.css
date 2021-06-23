@@ -61,9 +61,10 @@
         margin-top: 0;
     }
 }
-.btn-primary {
+.card-body .btn-primary {
     border-width: 2px;
     border-color: #e27500;
+    border-radius: 3px;
 }
 .input-group {
     position: absolute;

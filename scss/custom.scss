@@ -17,7 +17,14 @@ $success: #0d6efd;
 @import "../bootstrap/scss/type";
 */
 
+$modal-content-color: white;
+$success: #69ff52;
+@import "../bootstrap/scss/bootstrap";
 
+// Create your own map
+$custom-colors: (
+  "default": white
+);
 
-@import "../bootstrap/scss/bootstrap"
-
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
